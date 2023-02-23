@@ -12,12 +12,12 @@
     <div class="grid grid-cols-2">
     {{ range .Site.Data.core_members.members }}
       <div class="p-8 text-center">
-        <img class="img-team-member" src="images/{{.photo}}">
+        <img class="img-team-member" src="images/{{.photo}}" alt="{{.name}}'s photo">
         <h4>{{ .name }}</h4>
         <a href="{{.web}}">{{.web}}</a>
-        <div>{{ .info }}</div>
+        <div><p align="justify">{{ .info }}</p></div>
       </div>
     {{ end }}
     </div>
-    
+
 </div>
