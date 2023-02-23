@@ -1,17 +1,29 @@
 members:
   - name: Juliana Freire
-    photo: juliana.jpg
+    photo: julianaF.png
     web: https://vgc.engineering.nyu.edu/~juliana
     info: "Juliana is a Professor of Computer Science and Data Science at New York University, and the Elected Chair of the ACM SIGMOD."
+  - name: Jennifer Jacquet
+    photo: jacquet-portrait.webp
+    web: https://jenniferjacquet.com/
+    info: "is an Associate Professor in the Department of Environmental Studies and Director of XE: Experimental Humanities and Social Engagement at NYU. She is also deputy director of NYU's Center for Environmental and Animal Protection. Her research focuses on animals and the environment, Agnotology, and attribution and responsibility in the Anthropocene"
+  - name: GOHAR PETROSSIAN
+    photo: gohar.jpeg
+    web: https://www.jjay.cuny.edu/faculty/gohar-petrossian
+    info: "Dr. GOHAR PETROSSIAN is Associate Professor in the Department of Criminal Justice, Director of the International Crime and Justice Master’s Program at John Jay College of Criminal Justice, and Deputy Executive Officer of the CUNY Graduate Center Criminal Justice Doctoral Program. Dr Petrossian is also the co-editor of the Problem-Oriented Policing Guides (at the popcenter.org) for Wilderness Problems."
+  - name: Sunandan Chakraborty
+    photo: sunandan-chakraborty.jpeg
+    web: https://luddy.iupui.edu/people/sunandan-chakraborty/
+    info: Sunandan Chakraborty focuses on data science for social good. Building computational models that leverage vast data sets, he applies them to a broad spectrum of problems in social and environmental science, agriculture, health, and other fields. He draws on diverse data sets (news, social media, images, etc.) and uses tools such as big data analytics, machine learning, information extraction, and time series analysis to compile information and discover knowledge that can lead to solutions.
+  - name: Monique Sosnowski
+    photo: Sosnowski.webp
+    web: https://www.msosnowski.com/
+    info: "Monique is a wildlife crime and security specialist who integrates her hands-on experience in wildlife crime prevention and analysis with African field conservation. Her work in this field is reflected in her 30 academic articles, reports, and book chapters, alongside a co-authored book on African security and politics in Benin. With nearly a decade of research experience on wildlife crime prevention in Africa, Monique focuses on integrating academic insights into practical field operations to ensure they are evidence-based and optimally effective. "
   - name: Juliana Barbosa
     photo: julianab.jpg
     web: https://github.com/julesbarbosa
-    info: "Juliana is a Reserach Scientist at VIDA - NYU"
-  - name: Juliana Barbosa
-    photo: julianab.jpg
-    web: https://github.com/julesbarbosa
-    info: "Juliana is a Reserach Scientist at VIDA - NYU"
-  - name: Juliana Barbosa
-    photo: julianab.jpg
-    web: https://github.com/julesbarbosa
-    info: "Juliana is a Reserach Scientist at VIDA - NYU"
+    info: "Juliana is a Research Scientist at VIDA - NYU"
+  - name: David Dai
+    photo: nopicture.jpeg
+    web: https://github.com/
+    info: "David is a graduate student at New York University"
