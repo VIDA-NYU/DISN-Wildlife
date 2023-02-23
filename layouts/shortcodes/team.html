@@ -7,6 +7,9 @@
 .basis-2\/4 {
   flex-basis: 50%;
 }
+.text-justify {
+  text-align: justify;
+}
 </style>
 <div class="list">
     <div class="grid grid-cols-2">
@@ -15,7 +18,7 @@
         <img class="img-team-member" src="images/{{.photo}}" alt="{{.name}}'s photo">
         <h4>{{ .name }}</h4>
         <a href="{{.web}}">{{.web}}</a>
-        <div><p align="justify">{{ .info }}</p></div>
+        <div class="text-justify"><p>{{ .info }}</p></div>
       </div>
     {{ end }}
     </div>
