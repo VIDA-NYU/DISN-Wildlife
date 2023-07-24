@@ -9,8 +9,15 @@
 .text-justify {
   text-align: center;
 }
+img {
+    transition:transform 0.25s ease;
+}
+img:hover {
+    -webkit-transform:scale(1.5); /* or some other value */
+    transform:scale(1.5);
+}
 </style>
 <div class="img">
-  <img class="img-poster" src="images/nsf-poster.jpg" alt="NSF Conference poster", onclick="enlargeImg()">
+  <img class="img-poster" src="images/nsf-poster.jpg" alt="NSF Conference poster">
   <div class="text-justify"><p>NSF DISN conference 2023 </p></div>
 </div>
