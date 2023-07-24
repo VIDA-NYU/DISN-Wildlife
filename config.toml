@@ -35,6 +35,12 @@ pygmentsStyle = "native"
     url = "#team"
     weight = 2
 
+# Make the tags and categories pages accessible directly from the navbar.
+[[menu.main]]
+    name = "Publications"
+    url = "#publications"
+    weight = 3
+
 # Site wide params and SEO
 [params]
     # Site description. Individual pages can have descriptions too but if
