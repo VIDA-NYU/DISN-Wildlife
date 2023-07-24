@@ -37,8 +37,8 @@ pygmentsStyle = "native"
 
 # Make the tags and categories pages accessible directly from the navbar.
 [[menu.main]]
-    name = "Publications"
-    url = "#publications"
+    name = "News"
+    url = "#news"
     weight = 3
 
 # Site wide params and SEO
