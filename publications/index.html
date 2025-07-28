@@ -1,0 +1,293 @@
+<!doctype html>
+<html lang=en-us>
+<head>
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
+    <title>Publications - DISN Wildlife Research Project</title>
+    <meta property="og:title" content="Publications - DISN Wildlife Research Project">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content>
+    <meta property="og:url" content="https://vida-nyu.github.io/DISN-Wildlife/publications/">
+    <meta property="og:description" content="DISN wildlife webpage">
+    <meta name=Description property="description" content="DISN wildlife webpage">
+    <link rel=stylesheet href=https://vida-nyu.github.io/DISN-Wildlife/css/style.min.css>
+    <link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
+    <link rel=icon type=image/svg+xml href=/favicon.svg>
+    <link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
+    <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
+    <link rel=manifest href=/site.webmanifest>
+    <link href=https://vida-nyu.github.io/DISN-Wildlife/index.xml type=application/atom+xml rel=alternate title="Sitewide Atom feed">
+    <meta name=theme-color content="#ffffff">
+    <script>
+        function updateMode(){
+            localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")
+        }
+        function toggleMode(){
+            localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()
+        }
+        window.onload=updateMode();
+        function toggleMenu(){
+            let e=document.getElementById("navbar-default");
+            e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")
+        }
+    </script>
+    <style>
+        .publication-item {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            border: 1px solid #e5e7eb;
+            border-radius: 12px;
+            background-color: #f9fafb;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .publication-item:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+        }
+        .dark .publication-item {
+            background-color: #1f2937;
+            border-color: #374151;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+        }
+        .dark .publication-item:hover {
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+        }
+
+        .publication-image {
+            margin-right: 1.5rem;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+            max-width: 200px;
+            height: auto;
+        }
+        .publication-image:hover {
+            transform: scale(1.05);
+        }
+
+        .publication-content {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .publication-title {
+            font-weight: bold;
+            margin-bottom: 0.75rem;
+            color: #1f2937;
+            font-size: 1.1rem;
+            line-height: 1.4;
+        }
+        .dark .publication-title {
+            color: #f9fafb;
+        }
+
+        .publication-authors {
+            font-style: italic;
+            margin-bottom: 0.75rem;
+            color: #6b7280;
+            line-height: 1.5;
+        }
+
+        .publication-journal {
+            color: #059669;
+            font-weight: 500;
+            margin-bottom: 0.75rem;
+            font-size: 0.95rem;
+        }
+
+        .publication-links {
+            margin-top: 1rem;
+        }
+        .publication-links a {
+            color: #1e40af;
+            text-decoration: none;
+            margin-right: 1rem;
+            padding: 0.5rem 1rem;
+            background-color: #eff6ff;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            transition: background-color 0.2s ease;
+        }
+        .publication-links a:hover {
+            background-color: #dbeafe;
+            color: #1e3a8a;
+        }
+        .dark .publication-links a {
+            background-color: #1e3a8a;
+            color: #dbeafe;
+        }
+        .dark .publication-links a:hover {
+            background-color: #1e40af;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .publication-item {
+                flex-direction: column;
+                padding: 1rem;
+            }
+            .publication-image {
+                margin-right: 0;
+                margin-bottom: 1rem;
+                max-width: 150px;
+            }
+            .publication-title {
+                font-size: 1rem;
+            }
+            .publication-links a {
+                display: inline-block;
+                margin-bottom: 0.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .publication-image {
+                max-width: 120px;
+            }
+            .publication-item {
+                padding: 0.75rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="md:px-0 px-2">
+        <nav>
+            <div class="container flex flex-wrap justify-between items-center mx-auto" style="max-width: 70%;">
+                <div class="nav-main my-2.5">
+                    <a href=https://vida-nyu.github.io/DISN-Wildlife/ class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0">DISN Wildlife Research Project</a>
+                </div>
+                <button type=button onclick=toggleMenu() class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls=navbar-default aria-expanded=false>
+                    <span class=sr-only>Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                    </svg>
+                </button>
+                <div class="hidden w-full md:block md:w-auto" id=navbar-default>
+                    <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5 grid-cols-1 pl-0 text-center">
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife/>Home</a>
+                        </li>
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife/team/>Team</a>
+                        </li>
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife/publications/>Publications</a>
+                        </li>
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife/news/>News</a>
+                        </li>
+                        <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                            <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife/resources/>Resources</a>
+                        </li>
+                        <li class="h-7 pl-2.5 pr-0 list-none">
+                            <button type=button onclick=toggleMode() class=h-full aria-label="Toggle between dark and light mode">
+                                <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline" id=ligh-mode-button-img alt="A sun icon for switching to light mode" src=https://vida-nyu.github.io/DISN-Wildlife/img/light_mode.svg>
+                                <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden" id=dark-mode-button-img alt="A moon icon for switching to dark mode" src=https://vida-nyu.github.io/DISN-Wildlife/img/dark_mode.svg>
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="content h-card container mt-2 m-auto leading-loose md:px-0 px-2 z-0" role=main style="max-width: 70%;">
+        <h1>Publications</h1>
+
+        <div class="publications-list">
+            <!-- Publication 1 -->
+            <div class="publication-item">
+                <img src="../images/shark.jpeg" alt="Shark trophy research" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">Prevalence of endangered shark trophies in automated detection of the online wildlife trade</div>
+                    <div class="publication-authors">Sunandan Chakraborty, Spencer N Roberts, Gohar A Petrossian, Monique Sosnowski, Juliana Freire, Jennifer Jacquet</div>
+                    <div class="publication-journal">Biological Conservation (2025)</div>
+                    <div class="publication-links">
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0006320725000291?via%3Dihub" target="_blank">[Link]</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication 2 -->
+            <div class="publication-item">
+                <img src="../images/vision.png" alt="Vision language models for wildlife detection" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">Descriptive Analysis of Online Wildlife Products Using Vision Language Models</div>
+                    <div class="publication-authors">Sharma K, Barbosa JS, Roberts S, Gondhali U, Petrossian G, Jacquet J, Freire J, Chakraborty S</div>
+                    <div class="publication-journal">Proceedings of the 8th ACM SIGCAS/SIGCHI Conference on Computing and Sustainable Societies (Accepted, 2025)</div>
+                </div>
+            </div>
+
+            <!-- Publication 3 -->
+            <div class="publication-item">
+                <img src="../images/LTS-paper.png" alt="LLM-based approach for wildlife trafficking detection" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">A Cost-Effective LLM-based Approach to Identify Wildlife Trafficking in Online Marketplaces</div>
+                    <div class="publication-authors">Jarbosa JS, Gondhali U, Petrossian G, Sharma K, Jennifer J, Chakraborty S, Juliana J</div>
+                    <div class="publication-journal">Proceedings of 2025 SIGMOD International Conference on Management of Data (Accepted, 2025)</div>
+                    <div class="publication-links">
+                        <a href="../Files/A Cost-Effective LLM-based Approach to Identify Wildlife.pdf" target="_blank">[Link]</a>
+                        <a href="https://github.com/julesbarbosa/LTS" target="_blank">[Code]</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication 4 -->
+            <div class="publication-item">
+                <img src="../images/pipeline.png" alt="Wildlife advertisements collection" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">A Flexible and Scalable Approach for Collecting Wildlife Advertisements on the Web</div>
+                    <div class="publication-authors">Juliana Barbosa, Sunandan Chakraborty, Juliana Freire</div>
+                    <div class="publication-journal">Workshop on Knowledge Management, Trustworthiness, Interpretability in AI and Beyond - CIKM 2023 (2024)</div>
+                    <div class="publication-links">
+                        <a href="../Files/A Flexible and Scalable Approach for Collecting.pdf" target="_blank">[Link]</a>
+                        <a href="https://github.com/VIDA-NYU/wildlife_pipeline" target="_blank">[Code]</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Publication 5 -->
+            <div class="publication-item">
+                <img src="../images/hilts.png" alt="HILTS human-LLM collaboration" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">HILTS: Human-LLM Collaboration for Effective Data Labeling</div>
+                    <div class="publication-authors">Juliana Barbosa, Eduarda Ramos, Grace Fan, Aécio Santos, Juliana Freire</div>
+                    <div class="publication-journal">Submitted to Information Systems Journal (2025)</div>
+                </div>
+            </div>
+
+            <!-- Publication 6 -->
+            <!-- <div class="publication-item">
+                <img src="../images/reptile-leather.jpg" alt="Reptile leather trade networks" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">Scaling the Web: Unraveling Online Reptile Leather Trade Networks with Machine Learning and Network Analysis</div>
+                    <div class="publication-authors">J. Lang, G.A. Petrossian, B. Lieu, K. Bernstein, U. Gondhali, Juliana Barbosa, J. Freire, E. Ramos, S. Chakraborty, K Sharma, S. Roberts, & J. Jacquet</div>
+                    <div class="publication-journal">Abstract to appear at both the European and American Societies of Criminology (2025)</div>
+                </div>
+            </div> -->
+
+            <!-- Publication 7 -->
+            <!-- <div class="publication-item">
+                <img src="../images/latent-class-analysis.jpg" alt="Latent class analysis for animal leather products" class="publication-image">
+                <div class="publication-content">
+                    <div class="publication-title">Using Latent Class Analysis to Develop Typologies of Online Sellers of Potentially Illicit Animal Leather Products</div>
+                    <div class="publication-authors">U. Gondhali, Y. Kim, G.A. Petrossian, G. Riskevich, J. Lang, Juliana Barbosa, J. Freire, E. Ramos, S. Chakraborty, K Sharma, S. Roberts, & J. Jacquet</div>
+                    <div class="publication-journal">Abstract to appear at both the European and American Societies of Criminology (2025)</div>
+                </div>
+            </div> -->
+        </div>
+    </main>
+
+    <footer class="footer container h-10 text-center mt-1">
+        <hr class=my-4>
+        <ul class="pl-0 mt-1">
+            <li class="ml-2 first:before:content-none before:content-['•'] inline-block list-none"></li>
+            <li class="ml-2 first:before:content-none before:content-['•'] text-neutral-800 dark:text-neutral-400 inline-block list-none">
+                <span class=ml-2>© 2023</span>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
