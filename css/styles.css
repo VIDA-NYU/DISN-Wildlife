@@ -54,9 +54,10 @@
 
             .hero-section {
                 background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-                padding: 3rem 0;
-                margin-bottom: 3rem;
-                border-radius: 16px;
+                /* padding: 0.5rem 0; */
+                margin-bottom: 1rem;
+                border-radius: 14px;
+                height: auto;
             }
 
             .dark .hero-section {
@@ -72,7 +73,7 @@
 
             .hero-title {
                 font-size: 2.5rem;
-                font-weight: 700;
+                font-weight: 600;
                 color: #1f2937;
                 margin-bottom: 1rem;
                 line-height: 1.2;
@@ -96,15 +97,17 @@
             .project-overview {
                 display: grid;
                 grid-template-columns: 1fr 1fr;
-                gap: 3rem;
-                margin-bottom: 3rem;
+                gap: 1rem;
+                margin-bottom: 0rem;
                 align-items: center;
             }
 
             .overview-text {
-                line-height: 1.8;
+                line-height: 1.5;
                 color: #374151;
                 font-size: 1.1rem;
+                margin-top: 0;
+                margin-bottom: 0.1;
             }
 
             .dark .overview-text {
@@ -137,7 +140,7 @@
 
             .challenge-section {
                 background: #fef3c7;
-                padding: 2rem;
+                padding: 1rem;
                 border-radius: 12px;
                 margin: 2rem 0;
                 border-left: 4px solid #f59e0b;
@@ -161,7 +164,7 @@
 
             .solution-section {
                 background: #dbeafe;
-                padding: 2rem;
+                padding: 1rem;
                 border-radius: 12px;
                 margin: 2rem 0;
                 border-left: 4px solid #3b82f6;
