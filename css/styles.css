@@ -1,0 +1,303 @@
+<style>
+            .top-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 1.5rem 0;
+                border-bottom: 2px solid #e5e7eb;
+                margin-bottom: 2rem;
+            }
+
+            .dark .top-header {
+                border-bottom-color: #374151;
+            }
+
+            .logo-title-section {
+                display: flex;
+                align-items: center;
+                gap: 1.5rem;
+            }
+
+            .nyu-logo {
+                height: 40px;
+                width: auto;
+            }
+
+            .vida-logo {
+                height: 40px;
+                width: auto;
+                margin-left: 0px;
+                margin-right: 0px;
+            }
+
+            .project-title {
+                font-size: 2rem;
+                font-weight: 700;
+                color: #1f2937;
+                margin: 0;
+                line-height: 1.2;
+            }
+
+            .dark .project-title {
+                color: #f9fafb;
+            }
+
+            .institution-info {
+                text-align: right;
+                color: #6b7280;
+                font-size: 0.9rem;
+            }
+
+            .dark .institution-info {
+                color: #d1d5db;
+            }
+
+            .hero-section {
+                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+                padding: 3rem 0;
+                margin-bottom: 3rem;
+                border-radius: 16px;
+            }
+
+            .dark .hero-section {
+                background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+            }
+
+            .hero-content {
+                text-align: center;
+                max-width: 800px;
+                margin: 0 auto;
+                padding: 0 2rem;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #1f2937;
+                margin-bottom: 1rem;
+                line-height: 1.2;
+            }
+
+            .dark .hero-title {
+                color: #f9fafb;
+            }
+
+            .hero-subtitle {
+                font-size: 1.25rem;
+                color: #6b7280;
+                margin-bottom: 2rem;
+                line-height: 1.6;
+            }
+
+            .dark .hero-subtitle {
+                color: #d1d5db;
+            }
+
+            .project-overview {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 3rem;
+                margin-bottom: 3rem;
+                align-items: center;
+            }
+
+            .overview-text {
+                line-height: 1.8;
+                color: #374151;
+                font-size: 1.1rem;
+            }
+
+            .dark .overview-text {
+                color: #d1d5db;
+            }
+
+            .overview-image {
+                border-radius: 12px;
+                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+                transition: transform 0.3s ease;
+            }
+
+            .overview-image:hover {
+                transform: scale(1.02);
+            }
+
+            .impact-section {
+                margin: 3rem 0;
+                text-align: center;
+            }
+
+            .impact-image {
+                width: 100%;
+                max-width: 800px;
+                height: auto;
+                border-radius: 16px;
+                box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+                margin-bottom: 2rem;
+            }
+
+            .challenge-section {
+                background: #fef3c7;
+                padding: 2rem;
+                border-radius: 12px;
+                margin: 2rem 0;
+                border-left: 4px solid #f59e0b;
+            }
+
+            .dark .challenge-section {
+                background: #451a03;
+                border-left-color: #fbbf24;
+            }
+
+            .challenge-title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #92400e;
+                margin-bottom: 1rem;
+            }
+
+            .dark .challenge-title {
+                color: #fbbf24;
+            }
+
+            .solution-section {
+                background: #dbeafe;
+                padding: 2rem;
+                border-radius: 12px;
+                margin: 2rem 0;
+                border-left: 4px solid #3b82f6;
+            }
+
+            .dark .solution-section {
+                background: #1e3a8a;
+                border-left-color: #60a5fa;
+            }
+
+            .solution-title {
+                font-size: 1.25rem;
+                font-weight: 600;
+                color: #1e40af;
+                margin-bottom: 1rem;
+            }
+
+            .dark .solution-title {
+                color: #60a5fa;
+            }
+
+            .stats-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 2rem;
+                margin: 3rem 0;
+            }
+
+            .stat-card {
+                background: white;
+                padding: 2rem;
+                border-radius: 12px;
+                text-align: center;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+                border: 1px solid #e5e7eb;
+            }
+
+            .dark .stat-card {
+                background: #1f2937;
+                border-color: #374151;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+                font-weight: 700;
+                color: #3b82f6;
+                margin-bottom: 0.5rem;
+            }
+
+            .stat-label {
+                color: #6b7280;
+                font-size: 1rem;
+            }
+
+            .dark .stat-label {
+                color: #d1d5db;
+            }
+
+            /* Contributors Section */
+            .contributors-section {
+                padding: 40px 0;
+                margin-top: 60px;
+                border-top: 1px solid #e9ecef;
+                text-align: center;
+            }
+
+            .contributors-section .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+
+            .contributors-section h3 {
+                margin-bottom: 30px;
+                color: #333;
+                font-size: 1.5rem;
+                font-weight: 600;
+            }
+
+            .university-logos {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 40px;
+                flex-wrap: wrap;
+            }
+
+            .university-logo {
+                height: 60px;
+                width: auto;
+                max-width: 150px;
+                object-fit: contain;
+                transition: transform 0.3s ease;
+            }
+
+            .university-logo:hover {
+                transform: scale(1.05);
+            }
+
+            /* Responsive design for smaller screens */
+            @media (max-width: 768px) {
+                .top-header {
+                    flex-direction: column;
+                    gap: 1rem;
+                    text-align: center;
+                }
+
+                .logo-title-section {
+                    flex-direction: column;
+                    gap: 1rem;
+                }
+
+                .project-title {
+                    font-size: 1.5rem;
+                }
+
+                .project-overview {
+                    grid-template-columns: 1fr;
+                    gap: 2rem;
+                }
+
+                .hero-title {
+                    font-size: 2rem;
+                }
+
+                .hero-subtitle {
+                    font-size: 1.1rem;
+                }
+
+                .university-logos {
+                    gap: 20px;
+                }
+
+                .university-logo {
+                    height: 40px;
+                    max-width: 100px;
+                }
+            }
+        </style>

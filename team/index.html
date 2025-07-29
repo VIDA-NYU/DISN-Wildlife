@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Team - DISN Wildlife Research Project</title>
     <link rel="stylesheet" href="../css/style.min.css">
+    <link rel=stylesheet href=../css/styles.css>
+
     <script>
         function updateMode(){
             localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")
@@ -23,6 +25,7 @@
     <header class="md:px-0 px-2">
         <nav>
             <div class="container flex flex-wrap justify-between items-center mx-auto" style="max-width: 70%;">
+                <img src="../images/vida-2_Center.png" alt="VIDA Center" class="vida-logo">
                 <div class="nav-main my-2.5">
                     <a href="../" class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0">DISN Wildlife Research Project</a>
                 </div>

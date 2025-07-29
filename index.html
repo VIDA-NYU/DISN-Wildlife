@@ -1,26 +1,26 @@
-
 <!doctype html>
-<html lang=en-us>
+<html lang="en-us">
     <head>
-        <meta name=generator content="Hugo 0.120.4">
-        <meta charset=utf-8>
-        <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1">
+        <meta name="generator" content="Hugo 0.120.4">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
         <title>DISN Wildlife Research Project</title>
         <meta property="og:title" content="DISN Wildlife Research Project">
-<meta property="og:type" content="website">
-<meta property="og:image" content>
-<meta property="og:url" content="https://vida-nyu.github.io/DISN-Wildlife-website/">
-<meta property="og:description" content="DISN wildlife webpage">
-<meta name=Description property="description" content="DISN wildlife webpage">
-<link rel=stylesheet href=https://vida-nyu.github.io/DISN-Wildlife-website/css/style.min.css>
-<link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png>
-<link rel=icon type=image/svg+xml href=/favicon.svg>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png>
-<link rel=manifest href=/site.webmanifest>
-<link href=https://vida-nyu.github.io/DISN-Wildlife-website/index.xml type=application/atom+xml rel=alternate title="Sitewide Atom feed">
-<meta name=theme-color content="#ffffff">
-<script>
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://vida-nyu.github.io/DISN-Wildlife-website/">
+        <meta property="og:description" content="Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches">
+        <meta name="Description" property="description" content="Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches">
+        <link rel="stylesheet" href="https://vida-nyu.github.io/DISN-Wildlife-website/css/style.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link href="https://vida-nyu.github.io/DISN-Wildlife-website/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed">
+        <meta name="theme-color" content="#ffffff">
+        <script>
             function updateMode(){
                 localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")
             }
@@ -33,226 +33,70 @@
                 e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")
             }
         </script>
-        <style>
-            .hero-section {
-                background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
-                padding: 3rem 0;
-                margin-bottom: 3rem;
-                border-radius: 16px;
-            }
 
-            .dark .hero-section {
-                background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
-            }
-
-            .hero-content {
-                text-align: center;
-                max-width: 800px;
-                margin: 0 auto;
-                padding: 0 2rem;
-            }
-
-            .hero-title {
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: #1f2937;
-                margin-bottom: 1rem;
-                line-height: 1.2;
-            }
-
-            .dark .hero-title {
-                color: #f9fafb;
-            }
-
-            .hero-subtitle {
-                font-size: 1.25rem;
-                color: #6b7280;
-                margin-bottom: 2rem;
-                line-height: 1.6;
-            }
-
-            .dark .hero-subtitle {
-                color: #d1d5db;
-            }
-
-            .project-overview {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                gap: 3rem;
-                margin-bottom: 3rem;
-                align-items: center;
-            }
-
-            .overview-text {
-                line-height: 1.8;
-                color: #374151;
-                font-size: 1.1rem;
-            }
-
-            .dark .overview-text {
-                color: #d1d5db;
-            }
-
-            .overview-image {
-                border-radius: 12px;
-                box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
-                transition: transform 0.3s ease;
-            }
-
-            .overview-image:hover {
-                transform: scale(1.02);
-            }
-
-            .challenge-section {
-                background: #fef3c7;
-                padding: 2rem;
-                border-radius: 12px;
-                margin: 2rem 0;
-                border-left: 4px solid #f59e0b;
-            }
-
-            .dark .challenge-section {
-                background: #451a03;
-                border-left-color: #fbbf24;
-            }
-
-            .challenge-title {
-                font-size: 1.25rem;
-                font-weight: 600;
-                color: #92400e;
-                margin-bottom: 1rem;
-            }
-
-            .dark .challenge-title {
-                color: #fbbf24;
-            }
-
-            .solution-section {
-                background: #dbeafe;
-                padding: 2rem;
-                border-radius: 12px;
-                margin: 2rem 0;
-                border-left: 4px solid #3b82f6;
-            }
-
-            .dark .solution-section {
-                background: #1e3a8a;
-                border-left-color: #60a5fa;
-            }
-
-            .solution-title {
-                font-size: 1.25rem;
-                font-weight: 600;
-                color: #1e40af;
-                margin-bottom: 1rem;
-            }
-
-            .dark .solution-title {
-                color: #60a5fa;
-            }
-
-            .stats-grid {
-                display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-                gap: 2rem;
-                margin: 3rem 0;
-            }
-
-            .stat-card {
-                background: white;
-                padding: 2rem;
-                border-radius: 12px;
-                text-align: center;
-                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-                border: 1px solid #e5e7eb;
-            }
-
-            .dark .stat-card {
-                background: #1f2937;
-                border-color: #374151;
-            }
-
-            .stat-number {
-                font-size: 2.5rem;
-                font-weight: 700;
-                color: #3b82f6;
-                margin-bottom: 0.5rem;
-            }
-
-            .stat-label {
-                color: #6b7280;
-                font-size: 1rem;
-            }
-
-            .dark .stat-label {
-                color: #d1d5db;
-            }
-
-            @media (max-width: 768px) {
-                .project-overview {
-                    grid-template-columns: 1fr;
-                    gap: 2rem;
-                }
-
-                .hero-title {
-                    font-size: 2rem;
-                }
-
-                .hero-subtitle {
-                    font-size: 1.1rem;
-                }
-            }
-        </style>
     </head>
     <body>
-        <header class="md:px-0 px-2">
-            <nav>
-                <div class="container flex flex-wrap justify-between items-center mx-auto" style="max-width: 70%;">
-                    <div class="nav-main my-2.5">
-                        <a href=./ class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0">DISN Wildlife Research Project</a>
-                    </div>
-                    <button type=button onclick=toggleMenu() class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls=navbar-default aria-expanded=false>
-                        <span class=sr-only>Open main menu</span>
-                        <svg class="w-6 h-6" aria-hidden="true" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
-                        </svg>
-                    </button>
-                    <div class="hidden w-full md:block md:w-auto" id=navbar-default>
-                        <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5 grid-cols-1 pl-0 text-center">
-                            <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                                <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife-website/>Home</a>
-                            </li>
-                            <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                                <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife-website/team/>Team</a>
-                            </li>
-                            <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                                <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife-website/publications/>Publications</a>
-                            </li>
-                            <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                                <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife-website/news/>News</a>
-                            </li>
-                            <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
-                                <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href=https://vida-nyu.github.io/DISN-Wildlife-website/resources/>Resources</a>
-                            </li>
-                            <li class="h-7 pl-2.5 pr-0 list-none">
-                                <button type=button onclick=toggleMode() class=h-full aria-label="Toggle between dark and light mode">
-                                    <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline" id=ligh-mode-button-img alt="A sun icon for switching to light mode" src=https://vida-nyu.github.io/DISN-Wildlife-website/img/light_mode.svg>
-                                    <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden" id=dark-mode-button-img alt="A moon icon for switching to dark mode" src=https://vida-nyu.github.io/DISN-Wildlife-website/img/dark_mode.svg>
-                                </button>
-    </li>
-</ul>
-                    </div>
-                </div>
-            </nav>
-        </header>
+        <main class="content h-card container mt-2 m-auto leading-loose md:px-0 px-2 z-0" role="main" style="max-width: 70%;">
+            <!-- <div class="top-header">
+                <div class="logo-title-section">
+                    <img src="images/nyu-vida.png" alt="New York University" class="nyu-logo">
+                     <h1 class="project-title">DISN WILDLIFE RESEARCH PROJECT</h1> -->
+                <!-- </div> -->
+                <!-- <div class="institution-info">
+                    <div>New York University</div>
+                    <div>VIDA Center</div>
+                </div> -->
+            <!-- </div> -->
 
-        <main class="content h-card container mt-2 m-auto leading-loose md:px-0 px-2 z-0" role=main style="max-width: 70%;">
+            <header class="md:px-0 px-2">
+                <nav>
+                    <div class="container flex flex-wrap justify-between items-center mx-auto" style="max-width: 100%;">
+                        <!-- <img src="images/nyu-logo.webp" alt="New York University" class="nyu-logo"> -->
+                        <img src="images/vida-2_Center.png" alt="VIDA Center" class="vida-logo">
+                        <div class="nav-main my-2.5">
+                            <a href="./" class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0">DISN Wildlife Research Project</a>
+                        </div>
+                        <button type="button" onclick="toggleMenu()" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                            <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5 grid-cols-1 pl-0 text-center">
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/">Home</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/team/">Team</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/publications/">Publications</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/news/">News</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/resources/">Resources</a>
+                                </li>
+                                <li class="h-7 pl-2.5 pr-0 list-none">
+                                    <button type="button" onclick="toggleMode()" class="h-full" aria-label="Toggle between dark and light mode">
+                                        <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline" id="ligh-mode-button-img" alt="A sun icon for switching to light mode" src="https://vida-nyu.github.io/DISN-Wildlife-website/img/light_mode.svg">
+                                        <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden" id="dark-mode-button-img" alt="A moon icon for switching to dark mode" src="https://vida-nyu.github.io/DISN-Wildlife-website/img/dark_mode.svg">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
             <div class="hero-section">
                 <div class="hero-content">
-                    <h1 class="hero-title">DISN Wildlife Research Project</h1>
-                    <p class="hero-subtitle">Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches</p>
+                    <h2 class="hero-title">Advancing Wildlife Conservation</h2>
+                    <p class="hero-subtitle">Through innovative data science and machine learning approaches to combat wildlife trafficking</p>
                 </div>
-</div>
+            </div>
 
             <div class="project-overview">
                 <div>
@@ -269,8 +113,18 @@
                     </p>
                 </div>
                 <div>
-                    <img src="images/images_init/animal_traficking1.jpeg" alt="Wildlife trafficking overview" class="overview-image" style="width: 100%; height: auto;">
+                    <img src="images/images_init/parrot.png" alt="Wildlife trafficking overview" class="overview-image" style="width: 100%; height: auto;">
                 </div>
+            </div>
+
+            <div class="impact-section">
+                <h2>Our Impact</h2>
+                <p class="overview-text" style="max-width: 800px; margin: 0 auto;">
+                    Our research directly addresses the critical need for effective wildlife trafficking detection and prevention.
+                    By developing cost-effective, scalable solutions, we empower researchers and law enforcement agencies worldwide
+                    to combat this global crisis more effectively.
+                </p>
+                <img src="images/images_init/animal_traficking1.jpeg" alt="Animal trafficking impact" class="impact-image">
             </div>
 
             <div class="challenge-section">
@@ -310,11 +164,11 @@
                     <div class="stat-number">$60</div>
                     <div class="stat-label">Cost vs $17K Traditional Approach</div>
                 </div>
-    </div>
+            </div>
 
             <div class="project-overview">
                 <div>
-                    <img src="images/LTS-paper.png" alt="Learn to Sample approach diagram" class="overview-image" style="width: 100%; height: auto;">
+                    <img src="images/hilts-pipeline.png" alt="Learn to Sample approach diagram" class="overview-image" style="width: 100%; height: auto;">
                 </div>
                 <div>
                     <h2>Our Approach</h2>
@@ -329,7 +183,7 @@
                         researchers and law enforcement agencies worldwide.
                     </p>
                 </div>
-    </div>
+            </div>
 
             <h1 id="ack NSF"></h1>
             <div style="text-align: center; margin-top: 3rem;">
@@ -337,36 +191,23 @@
                 <p style="margin-top: 1rem;">This project is funded by the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2146306&HistoricalAwards=false">NSF</a></p>
             </div>
         </main>
-
-        <footer class="footer container h-10 text-center mt-1">
-            <hr class=my-4>
-            <ul class="pl-0 mt-1">
-                <li class="ml-2 first:before:content-none before:content-['•'] inline-block list-none"></li>
-                <li class="ml-2 first:before:content-none before:content-['•'] text-neutral-800 dark:text-neutral-400 inline-block list-none">
-                    <span class=ml-2>© 2023</span>
-                </li>
-            </ul>
+        <footer class="contributors-section">
+            <div class="container">
+                <!-- <h3>Contributing Institutions</h3> -->
+                <div class="university-logos">
+                    <img src="./images/nyu-logo.webp" alt="New York University" class="university-logo">
+                    <img src="./img/132-1326303_indiana-university-hoosiers-football-team-logo-indiana-university-logo-png.png" alt="Indiana University" class="university-logo">
+                    <img src="./img/miami-logo.png" alt="Miami University" class="university-logo">
+                    <img src="./img/JJCJ_logo.png" alt="CUNY - John Jay College of Criminal Justice" class="university-logo">
+                    <!-- Add more university logos as needed -->
+                </div>
+            </div>
         </footer>
-        <script>
-            function toggleModal(e){
-                return t=>{
-                    (t.target.id.startsWith("#open-modal")||t.target.id.startsWith("#close-modal")||t.target.classList.contains("open-modal"))&&(t.stopPropagation(),e.classList.toggle("invisible"),e.classList.toggle("pointer-events-auto"),document.body.classList.toggle("pointer-events-none"))
-                }
-            }
-            var list=document.getElementsByClassName("open-modal"),id,modWin,closeButton,clipboardCopyButtons;
-            for(let e of list)id=e.attributes["data-target"].textContent,modWin=document.getElementById(id),closeButton=document.getElementById(id.replace("open","close")),e.addEventListener("click",toggleModal(modWin)),closeButton.addEventListener("click",toggleModal(modWin)),modWin.addEventListener("click",toggleModal(modWin));
-            clipboardCopyButtons=document.getElementsByClassName("modal-copy-citation");
-            for(let e of clipboardCopyButtons){
-                let t=e.id.replace("#copy-",""),n=document.getElementById(t);
-                e.addEventListener("click",function(e){
-                    return function(){
-                        if(!e){
-                            var t=this.innerHTML;
-                            navigator.clipboard.writeText(n.innerHTML).then(()=>{this.innerHTML="Copied!",this.disabled=!0},()=>{this.innerHTML="Error copying!"}),e=!0,setTimeout(function(){this.innerHTML=t,this.disabled=!1,e=!1}.bind(this),1e3)
-                        }
-                    }
-                }(!1),this)
-            }
-        </script>
+
+        <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #e5e7eb; text-align: center; color: #6b7280;">
+            <div style="max-width: 70%; margin: 0 auto;">
+                <p>&copy; 2025 DISN Wildlife Research Project. Advancing conservation through data science.</p>
+            </div>
+        </footer>
     </body>
 </html>
