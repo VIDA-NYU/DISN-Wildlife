@@ -4,13 +4,15 @@
         <meta name="generator" content="Hugo 0.120.4">
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
-        <title>DISN Wildlife Research Project</title>
+        <title> Discovering, Analyzing, and Disrupting Wildlife Trafficking Networks</title>
         <meta property="og:title" content="DISN Wildlife Research Project">
         <meta property="og:type" content="website">
         <meta property="og:image" content="">
         <meta property="og:url" content="https://vida-nyu.github.io/DISN-Wildlife-website/">
         <meta property="og:description" content="Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches">
-        <meta name="Description" property="description" content="Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches">
+        <meta name="Description" property="description"
+content="Advancing the fight against wildlife trafficking through
+innovative AI and data science">
         <link rel="stylesheet" href="https://vida-nyu.github.io/DISN-Wildlife-website/css/style.min.css">
         <link rel="stylesheet" href="./css/styles.css">
         <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
@@ -54,7 +56,7 @@
                         <!-- <img src="images/nyu-logo.webp" alt="New York University" class="nyu-logo"> -->
                         <img src="images/vida-2_Center.png" alt="VIDA Center" class="vida-logo">
                         <div class="nav-main my-2.5">
-                            <a href="./" class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0">DISN Wildlife Research Project</a>
+                            <a href="./" class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0"></a>
                         </div>
                         <button type="button" onclick="toggleMenu()" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
                             <span class="sr-only">Open main menu</span>
@@ -100,7 +102,8 @@
 
             <div class="project-overview">
                 <div>
-                    <h2 style="margin-top: 0;">Project Overview</h2>
+                    <h2 style="margin-top: 0;">Discovering, Analyzing,
+                and Disrupting Wildlife Trafficking Networks: Project Overview</h2>
                     <p class="overview-text">
                         Wildlife trafficking is a global crisis affecting biodiversity, ecological systems, and public health.
                         This illicit trade generates $7-23 billion annually and encompasses fashion, exotic pets, traditional medicine,
@@ -108,10 +111,11 @@
                         creating new challenges but also opportunities for digital detection.
                     </p>
                     <p class="overview-text">
-                        Our interdisciplinary project combines computer science, criminology, and environmental science to develop
+                        Our NSF-funded interdisciplinary project combines computer science, criminology, and environmental science to develop
                         innovative tools for discovering, analyzing, and disrupting wildlife trafficking networks operating online.
                     </p>
                 </div>
+		
                 <div>
                     <img src="images/images_init/macaw.png" alt="Wildlife trafficking overview" class="overview-image" style="width: 70%; height: auto;">
                 </div>
@@ -135,27 +139,14 @@
                 <p class="overview-text">
                     Online marketplaces publish millions of ads, but identifying wildlife-related products is like finding a needle in a haystack.
                     For example, searching for "shark" on eBay returns toys, shirts, vacuum cleaners, and only a few actual shark products.
-                    Even specific queries like "shark jaw" return irrelevant fossil items. This makes data collection and analysis extremely challenging
+                    Even specific queries like "shark jaw" return
+            irrelevant fossil items. This makes data collection, triage, and analysis extremely challenging
                     for researchers studying wildlife trafficking patterns. What if you could achieve 95% accuracy in wildlife trafficking detection in online
                     marketplaces while slashing labeling costs?
                 </p>
             </div>
 
-            <div class="solution-section"  style="height: 75%;">
-                <h3 class="solution-title">Our Solution</h3>
-                <p class="overview-text">
-                    <strong>Learn to Sample (LTS)</strong> makes this possible by combining clustering with multi-armed bandit sampling and leveraging LLMs to
-                    label the data. The derived labeled data can be used to train specialized classifiers.
-                     this approach tackles the notorious challenge of highly imbalanced datasets—turning the detection of illegal endangered species trade from
-                    needle-in-a-haystack to precision targeting.
-                    <!--We developed a new approach to automatically derive learning-based classifiers to identify relevant ads. A key component of our approach is
-                    , a framework that leverages Large Language Models (LLMs) to create training data
-                    to efficiently identify and classify wildlife-related advertisements. Our method combines clustering techniques,
-                    multi-armed bandit algorithms, and active learning to create cost-effective, specialized classifiers for different
-                    research questions while maintaining high accuracy.
-                    -->
-                </p>
-            </div>
+ 
             </div>
 
 
@@ -166,35 +157,29 @@
                 <div>
                     <h2>Our Approach</h2>
                     <p class="overview-text">
-                        Our <strong>Learn to Sample</strong> methodology addresses the fundamental challenge of identifying relevant wildlife
-                        advertisements in massive online datasets. We use clustering to ensure diverse sample selection, multi-armed bandit
-                        strategies to balance exploration and exploitation, and active learning to iteratively refine our classifiers.
+                        We have developed an <a
+                href="https://github.com/VIDA-NYU/wildlife_pipeline">
+                end-to-end pipeline </a> to
+                streamline the collection, extraction and triage of
+                online ads. Our <strong>Learn to Sample (LTS) </strong> methodology addresses the fundamental challenge of identifying relevant wildlife
+                        advertisements in massive online datasets. LTS
+                leverages LLMs to label a small, 
+                systematically selected set of ads, and uses the
+                labeled ads to automatically create smaller, specialized classifiers that can be
+                deployed at scale to perform triage over large ad collections. 
                     </p>
                     <p class="overview-text">
-                        This approach enables researchers to create specialized models for different wildlife trafficking research questions
+                        This approach enables researchers to create specialized models for different research questions
                         at a fraction of the cost of traditional methods, making large-scale wildlife trafficking analysis accessible to
-                        researchers and law enforcement agencies worldwide.
+                        researchers and law enforcement agencies
+                worldwide. LTS is open source and can be accessed at:
+                <a href="https://github.com/VIDA-NYU/LTS">
+                https://github.com/VIDA-NYU/LTS </a>.
                     </p>
                 </div>
             </div>
             <div class="stats-grid">
-                <div class="stat-card">
-                    <div class="stat-number">$7-23B</div>
-                    <div class="stat-label">Annual Wildlife Trafficking Revenue</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">95%</div>
-                    <div class="stat-label">Model Accuracy Achieved</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">700K+</div>
-                    <div class="stat-label">Ads Analyzed</div>
-                </div>
-                <div class="stat-card">
-                    <div class="stat-number">$60</div>
-                    <div class="stat-label">Cost vs $17K Traditional Approach</div>
-                </div>
-            </div>
+    </div>
 
             <h1 id="ack NSF"></h1>
             <div style="text-align: center; margin-top: 3rem;">
