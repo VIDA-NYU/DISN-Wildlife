@@ -1,0 +1,36 @@
+baseURL = "/"
+languageCode = "en-us"
+title = "DISN Wildlife Research Project"
+
+[params]
+  description = "Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches"
+  author = "VIDA Center, NYU"
+  github = "https://github.com/VIDA-NYU/wildlife_pipeline"
+  nsfAward = "https://www.nsf.gov/awardsearch/showAward?AWD_ID=2146306&HistoricalAwards=false"
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "Team"
+    url = "/team/"
+    weight = 2
+  [[menu.main]]
+    name = "Publications"
+    url = "/publications/"
+    weight = 3
+  [[menu.main]]
+    name = "News"
+    url = "/news/"
+    weight = 4
+  [[menu.main]]
+    name = "Resources"
+    url = "https://github.com/VIDA-NYU/wildlife_pipeline"
+    weight = 5
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>DISN Wildlife Research Project</title>
+    <link>//localhost:1313/news/</link>
+    <description>Recent content on DISN Wildlife Research Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Apr 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/news/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Tandon Research Excellence Expo (HILTS)</title>
+      <link>//localhost:1313/news/hilts-expo-2025/</link>
+      <pubDate>Tue, 15 Apr 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/hilts-expo-2025/</guid>
+      <description>&lt;p&gt;Juliana Barbosa, Eduarda Ramos, Gohar Petrossian, and Juliana Freire presented their research at the prestigious Tandon Research Excellence Expo, showcasing the innovative HILTS project and its impact on wildlife conservation efforts.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>FBI New York Transnational Organized Crime Conference</title>
+      <link>//localhost:1313/news/fbi-conference-2025/</link>
+      <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/fbi-conference-2025/</guid>
+      <description>&lt;p&gt;Gohar Petrossian presented groundbreaking research on transnational wildlife crime at the 2025 FBI New York Transnational Organized Crime Eastern Hemisphere (TOC-E) Academic Conference, contributing to international law enforcement strategies.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Wildlife and Environmental Crime Summit</title>
+      <link>//localhost:1313/news/hsi-summit-2024/</link>
+      <pubDate>Wed, 04 Sep 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/hsi-summit-2024/</guid>
+      <description>&lt;p&gt;Gohar Petrossian served as a distinguished panelist and discussant at the Wildlife and Environmental Crime Summit hosted by Homeland Security Investigations, sharing expertise on combating environmental crimes and wildlife trafficking.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>American Society of Criminology Conference</title>
+      <link>//localhost:1313/news/asc-2024/</link>
+      <pubDate>Fri, 15 Nov 2024 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/asc-2024/</guid>
+      <description>&lt;p&gt;Ulhas Gondhali presented a comprehensive poster at the American Society of Criminology conference, showcasing innovative research methodologies in wildlife crime prevention and detection.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>NSF DISN Conference 2023</title>
+      <link>//localhost:1313/news/nsf-disn-2023/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/nsf-disn-2023/</guid>
+      <description>&lt;p&gt;Gohar Petrossian and Sunandan Chakraborty attended and presented at the prestigious NSF DISN Conference, demonstrating our interdisciplinary approach to discovering, analyzing, and disrupting wildlife trafficking networks.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>InfoWild Workshop at HIS Conference 2023</title>
+      <link>//localhost:1313/news/infowild-2023/</link>
+      <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/news/infowild-2023/</guid>
+      <description>&lt;p&gt;Juliana Barbosa presented innovative research at the 1st CIKM International Workshop on Knowledge Extraction and Management for Wildlife Conservation, showcasing our flexible and scalable approach for collecting wildlife advertisements on the web.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

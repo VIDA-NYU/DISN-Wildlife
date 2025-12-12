@@ -1,0 +1,33 @@
+{{ define "main" }}
+<div class="mb-8">
+    <h1 class="text-3xl md:text-4xl font-bold text-gray-900 dark:text-white mb-4">{{ .Title }}</h1>
+    {{ with .Description }}
+    <p class="text-lg text-gray-600 dark:text-gray-400">{{ . }}</p>
+    {{ end }}
+</div>
+
+{{ .Content }}
+
+{{ if eq .Section "team" }}
+    {{ partial "team-list.html" . }}
+{{ else if eq .Section "publications" }}
+    {{ partial "publications-list.html" . }}
+{{ else if eq .Section "news" }}
+    {{ partial "news-list.html" . }}
+{{ else }}
+<div class="grid gap-6">
+    {{ range .Pages }}
+    <article class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 p-6 hover:shadow-md transition-shadow duration-200">
+        <h2 class="text-xl font-semibold mb-2">
+            <a href="{{ .Permalink }}" class="text-gray-900 dark:text-white hover:text-emerald-600 dark:hover:text-emerald-400">
+                {{ .Title }}
+            </a>
+        </h2>
+        {{ with .Description }}
+        <p class="text-gray-600 dark:text-gray-400">{{ . }}</p>
+        {{ end }}
+    </article>
+    {{ end }}
+</div>
+{{ end }}
+{{ end }}

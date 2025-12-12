@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Publications on DISN Wildlife Research Project</title>
+    <link>//localhost:1313/publications/</link>
+    <description>Recent content in Publications on DISN Wildlife Research Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/publications/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Prevalence of endangered shark trophies in automated detection of the online wildlife trade</title>
+      <link>//localhost:1313/publications/shark-trophies-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publications/shark-trophies-2025/</guid>
+      <description>&lt;p&gt;This paper examines the prevalence of endangered shark trophies in automated detection systems for online wildlife trade monitoring.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Descriptive Analysis of Online Wildlife Products Using Vision Language Models</title>
+      <link>//localhost:1313/publications/vision-language-models-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publications/vision-language-models-2025/</guid>
+      <description>&lt;p&gt;This paper presents a descriptive analysis of online wildlife products using vision language models for automated detection and classification.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Cost-Effective LLM-based Approach to Identify Wildlife Trafficking in Online Marketplaces</title>
+      <link>//localhost:1313/publications/llm-wildlife-trafficking-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publications/llm-wildlife-trafficking-2025/</guid>
+      <description>&lt;p&gt;This paper introduces a cost-effective LLM-based approach to identify wildlife trafficking in online marketplaces, significantly reducing labeling costs while maintaining high accuracy.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>A Flexible and Scalable Approach for Collecting Wildlife Advertisements on the Web</title>
+      <link>//localhost:1313/publications/wildlife-advertisements-2024/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publications/wildlife-advertisements-2024/</guid>
+      <description>&lt;p&gt;This paper presents a flexible and scalable approach for collecting wildlife advertisements on the web, enabling large-scale data collection for wildlife trafficking research.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>HILTS: Human-LLM Collaboration for Effective Data Labeling</title>
+      <link>//localhost:1313/publications/hilts-2025/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/publications/hilts-2025/</guid>
+      <description>&lt;p&gt;HILTS introduces a novel approach for human-LLM collaboration in data labeling tasks, improving efficiency and accuracy in wildlife trafficking detection.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

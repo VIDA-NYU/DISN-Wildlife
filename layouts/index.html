@@ -1,0 +1,119 @@
+{{ define "main" }}
+<!-- Hero Section -->
+<section class="relative overflow-hidden rounded-2xl bg-gradient-to-br from-emerald-600 via-emerald-700 to-teal-800 text-white mb-16">
+    <div class="absolute inset-0 bg-black/20"></div>
+    <div class="absolute inset-0 bg-[url('/images/images_init/macaw.png')] bg-cover bg-center opacity-20"></div>
+    <div class="relative px-8 py-16 md:py-24 text-center">
+        <h1 class="text-3xl md:text-5xl font-bold mb-4 leading-tight">
+            {{ .Params.hero_title | default "Advancing Wildlife Conservation" }}
+        </h1>
+        <p class="text-lg md:text-xl text-emerald-100 max-w-3xl mx-auto mb-8">
+            {{ .Params.hero_subtitle | default "Through innovative data science and machine learning approaches to combat wildlife trafficking" }}
+        </p>
+        <div class="flex flex-wrap justify-center gap-4">
+            <a href="#overview" class="inline-flex items-center px-6 py-3 bg-white text-emerald-700 font-semibold rounded-lg hover:bg-emerald-50 transition-colors duration-200">
+                Learn More
+                <svg class="w-4 h-4 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+                </svg>
+            </a>
+            <a href="{{ .Site.Params.github }}" target="_blank" rel="noopener noreferrer" class="inline-flex items-center px-6 py-3 bg-transparent border-2 border-white text-white font-semibold rounded-lg hover:bg-white/10 transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                </svg>
+                View on GitHub
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Project Overview -->
+<section id="overview" class="mb-16">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">
+                {{ .Params.overview_title | default "Discovering, Analyzing, and Disrupting Wildlife Trafficking Networks" }}
+            </h2>
+            <div class="prose prose-lg dark:prose-invert max-w-none">
+                {{ .Content }}
+            </div>
+        </div>
+        <div class="relative">
+            <img src="{{ "images/images_init/macaw.png" | relURL }}" alt="Wildlife Conservation" class="rounded-2xl shadow-xl w-full">
+            <div class="absolute -bottom-4 -right-4 w-24 h-24 bg-emerald-500 rounded-full opacity-20 blur-2xl"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Impact Section -->
+<section class="mb-16 bg-gray-50 dark:bg-gray-800 rounded-2xl p-8 md:p-12">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div class="order-2 md:order-1">
+            <img src="{{ "images/images_init/animal_traficking1.jpeg" | relURL }}" alt="Wildlife Trafficking Impact" class="rounded-2xl shadow-xl w-full">
+        </div>
+        <div class="order-1 md:order-2">
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Impact</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                Our research directly addresses the critical need for effective wildlife trafficking detection and prevention. 
+                By developing cost-effective, scalable solutions, we empower researchers and law enforcement agencies worldwide 
+                to combat this global crisis more effectively.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- Challenge Section -->
+<section class="mb-16">
+    <div class="bg-gradient-to-r from-amber-50 to-orange-50 dark:from-amber-900/20 dark:to-orange-900/20 rounded-2xl p-8 md:p-12 border border-amber-200 dark:border-amber-800">
+        <div class="flex items-start space-x-4">
+            <div class="flex-shrink-0">
+                <div class="w-12 h-12 bg-amber-500 rounded-xl flex items-center justify-center">
+                    <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"/>
+                    </svg>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-xl md:text-2xl font-bold text-gray-900 dark:text-white mb-3">The Challenge</h3>
+                <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed">
+                    Online marketplaces publish millions of ads, but identifying wildlife-related products is like finding a needle in a haystack. 
+                    For example, searching for "shark" on eBay returns toys, shirts, vacuum cleaners, and only a few actual shark products. 
+                    Even specific queries like "shark jaw" return irrelevant fossil items. This makes data collection, triage, and analysis extremely challenging 
+                    for researchers studying wildlife trafficking patterns.
+                </p>
+                <p class="text-emerald-600 dark:text-emerald-400 font-semibold mt-4 text-lg">
+                    What if you could achieve 95% accuracy in wildlife trafficking detection while slashing labeling costs?
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Approach Section -->
+<section class="mb-16">
+    <div class="grid md:grid-cols-2 gap-8 items-center">
+        <div>
+            <img src="{{ "images/hilts-pipeline.png" | relURL }}" alt="Learn to Sample Pipeline" class="rounded-2xl shadow-xl w-full bg-white p-4">
+        </div>
+        <div>
+            <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mb-4">Our Approach</h2>
+            <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-4">
+                We have developed an <a href="https://github.com/VIDA-NYU/wildlife_pipeline" class="text-emerald-600 dark:text-emerald-400 hover:underline font-medium">end-to-end pipeline</a> 
+                to streamline the collection, extraction and triage of online ads. Our <strong>Learn to Sample (LTS)</strong> methodology addresses 
+                the fundamental challenge of identifying relevant wildlife advertisements in massive online datasets.
+            </p>
+            <p class="text-gray-600 dark:text-gray-300 text-lg leading-relaxed mb-6">
+                LTS leverages LLMs to label a small, systematically selected set of ads, and uses the labeled ads to automatically create smaller, 
+                specialized classifiers that can be deployed at scale to perform triage over large ad collections.
+            </p>
+            <a href="https://github.com/VIDA-NYU/LTS" target="_blank" rel="noopener noreferrer" 
+               class="inline-flex items-center px-5 py-2.5 bg-emerald-600 text-white font-medium rounded-lg hover:bg-emerald-700 transition-colors duration-200">
+                <svg class="w-5 h-5 mr-2" fill="currentColor" viewBox="0 0 24 24">
+                    <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"/>
+                </svg>
+                Explore LTS on GitHub
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}

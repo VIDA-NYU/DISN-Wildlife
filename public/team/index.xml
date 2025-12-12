@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Team on DISN Wildlife Research Project</title>
+    <link>//localhost:1313/team/</link>
+    <description>Recent content in Team on DISN Wildlife Research Project</description>
+    <generator>Hugo</generator>
+    <language>en-us</language>
+    <atom:link href="//localhost:1313/team/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Juliana Freire</title>
+      <link>//localhost:1313/team/juliana-freire/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/juliana-freire/</guid>
+      <description>&lt;p&gt;Juliana is a Tandon Institute Professor, Professor of Computer Science and Data Science at New York University, and co-director of the NYU Visualization, Imaging and Data Analysis (VIDA) Center.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Jennifer Jacquet</title>
+      <link>//localhost:1313/team/jennifer-jacquet/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/jennifer-jacquet/</guid>
+      <description>&lt;p&gt;Jennifer Jacquet is a Professor of Environmental Science and Policy at the Rosenstiel School of Marine, Atmospheric, and Earth Science at the University of Miami, and affiliated faculty with the Abess Center for Ecosystem Science and Policy. She is also Associate Research Director of the Climate Social Science Network (CSSN) at Brown University.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Gohar Petrossian</title>
+      <link>//localhost:1313/team/gohar-petrossian/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/gohar-petrossian/</guid>
+      <description>&lt;p&gt;Dr. Gohar Petrossian is Associate Professor in the Department of Criminal Justice, Director of the International Crime and Justice Master&amp;rsquo;s Program at John Jay College of Criminal Justice, and Deputy Executive Officer of the CUNY Graduate Center Criminal Justice Doctoral Program.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Sunandan Chakraborty</title>
+      <link>//localhost:1313/team/sunandan-chakraborty/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/sunandan-chakraborty/</guid>
+      <description>&lt;p&gt;Sunandan Chakraborty focuses on data science for social good. Building computational models that leverage vast data sets, he applies them to a broad spectrum of problems in social and environmental science, agriculture, health, and other fields.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Juliana Barbosa</title>
+      <link>//localhost:1313/team/juliana-barbosa/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/juliana-barbosa/</guid>
+      <description>&lt;p&gt;Juliana is a Research Scientist at New York University - Visualization Imaging and Data Analysis Center.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Kinshuk Sharma</title>
+      <link>//localhost:1313/team/kinshuk-sharma/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/kinshuk-sharma/</guid>
+      <description>&lt;p&gt;Kinshuk Sharma is a PhD candidate in Data Science at Indiana University Indianapolis. His research develops multimodal AI frameworks that combine computer vision and natural language processing to address real-world challenges in wildlife conservation.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Spencer Roberts</title>
+      <link>//localhost:1313/team/spencer-roberts/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/spencer-roberts/</guid>
+      <description>&lt;p&gt;Spencer is a PhD Candidate at the University of Miami.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Joshua Lang</title>
+      <link>//localhost:1313/team/joshua-lang/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/joshua-lang/</guid>
+      <description>&lt;p&gt;Joshua A. Lang is a doctoral student in the Criminal Justice program at John Jay College of Criminal Justice and CUNY Graduate Center. His research interests include wildlife crime, juvenile delinquency, and mental health within the criminal justice system.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Eduarda Ramos</title>
+      <link>//localhost:1313/team/eduarda-ramos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/eduarda-ramos/</guid>
+      <description>&lt;p&gt;Eduarda is a Computer Science PhD student at New York University - Visualization Imaging and Data Analysis Center.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Ulhas Gondhali</title>
+      <link>//localhost:1313/team/ulhas-gondhali/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/ulhas-gondhali/</guid>
+      <description>&lt;p&gt;Ulhas Gondhali is a Ph.D. candidate at John Jay College of Criminal Justice, City University of New York. His research examines the intersections of illegal wildlife trade, illegal, unreported, and unregulated (IUU) fishing, maritime security, and transnational organized crime.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Julia von Ferber</title>
+      <link>//localhost:1313/team/julia-von-ferber/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/team/julia-von-ferber/</guid>
+      <description>&lt;p&gt;Julia von Ferber, Ph.D. is an Assistant Professor for the Department of Security, Fire and Emergency Management (SFEM) at John Jay College of Criminal Justice, CUNY. Her research focuses on applying Crime Prevention Through Environmental Design (CPTED) to measure crime in privately owned public spaces and cybercrime.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,133 @@
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    {{ range .Pages.ByWeight }}
+    {{ $slug := .File.BaseFileName }}
+    <article class="bg-white dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 overflow-hidden hover:shadow-lg transition-all duration-300 cursor-pointer group"
+             onclick="openNewsModal('{{ $slug }}')">
+        <div class="aspect-video overflow-hidden">
+            <img src="{{ .Params.image }}" 
+                 alt="{{ .Title }}" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">
+        </div>
+        <div class="p-5">
+            <time class="text-xs font-medium text-emerald-600 dark:text-emerald-400 uppercase tracking-wide">
+                {{ .Date.Format "January 2006" }}
+            </time>
+            <h3 class="text-lg font-semibold text-gray-900 dark:text-white mt-2 mb-2 line-clamp-2 group-hover:text-emerald-600 dark:group-hover:text-emerald-400 transition-colors duration-200">
+                {{ .Title }}
+            </h3>
+            <p class="text-sm text-gray-600 dark:text-gray-400 line-clamp-3">
+                {{ .Params.excerpt }}
+            </p>
+        </div>
+    </article>
+    {{ end }}
+</div>
+
+<!-- News Modals -->
+{{ range .Pages.ByWeight }}
+{{ $slug := .File.BaseFileName }}
+<div id="modal-{{ $slug }}" class="fixed inset-0 z-50 hidden overflow-y-auto" aria-modal="true" role="dialog">
+    <div class="flex min-h-screen items-center justify-center p-4">
+        <!-- Backdrop -->
+        <div class="fixed inset-0 bg-black/70 backdrop-blur-sm" onclick="closeNewsModal('{{ $slug }}')"></div>
+        
+        <!-- Modal Content -->
+        <div class="relative bg-white dark:bg-gray-800 rounded-2xl shadow-2xl max-w-3xl w-full max-h-[90vh] overflow-y-auto">
+            <!-- Close Button -->
+            <button onclick="closeNewsModal('{{ $slug }}')" 
+                    class="absolute top-4 right-4 z-10 p-2 bg-white/80 dark:bg-gray-800/80 rounded-full hover:bg-gray-100 dark:hover:bg-gray-700 transition-colors duration-200">
+                <svg class="w-5 h-5 text-gray-600 dark:text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                </svg>
+            </button>
+            
+            <!-- Image -->
+            <img src="{{ .Params.image }}" 
+                 alt="{{ .Title }}" 
+                 class="w-full h-64 md:h-80 object-cover rounded-t-2xl">
+            
+            <!-- Content -->
+            <div class="p-6 md:p-8">
+                <time class="text-sm font-medium text-emerald-600 dark:text-emerald-400">
+                    {{ .Date.Format "January 2, 2006" }}
+                </time>
+                <h2 class="text-2xl md:text-3xl font-bold text-gray-900 dark:text-white mt-2 mb-4">
+                    {{ .Title }}
+                </h2>
+                <div class="text-gray-600 dark:text-gray-300 leading-relaxed mb-6">
+                    {{ .Content }}
+                </div>
+                
+                <div class="flex flex-wrap gap-3">
+                    {{ with .Params.presentation_url }}
+                    <a href="{{ . }}" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        View Presentation
+                    </a>
+                    {{ end }}
+                    {{ with .Params.poster_url }}
+                    <a href="{{ . }}" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        View Poster
+                    </a>
+                    {{ end }}
+                    {{ with .Params.workshop_url }}
+                    <a href="{{ . }}" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+                        </svg>
+                        Workshop Website
+                    </a>
+                    {{ end }}
+                    {{ with .Params.paper_url }}
+                    <a href="{{ . }}" 
+                       target="_blank" 
+                       rel="noopener noreferrer"
+                       class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-lg hover:bg-emerald-700 transition-colors duration-200">
+                        <svg class="w-4 h-4 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"/>
+                        </svg>
+                        Download Paper
+                    </a>
+                    {{ end }}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{{ end }}
+
+<script>
+function openNewsModal(id) {
+    document.getElementById('modal-' + id).classList.remove('hidden');
+    document.body.style.overflow = 'hidden';
+}
+
+function closeNewsModal(id) {
+    document.getElementById('modal-' + id).classList.add('hidden');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal on Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        document.querySelectorAll('[id^="modal-"]').forEach(function(modal) {
+            modal.classList.add('hidden');
+        });
+        document.body.style.overflow = 'auto';
+    }
+});
+</script>
