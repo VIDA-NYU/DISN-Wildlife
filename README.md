@@ -19,7 +19,6 @@ A modern, responsive Hugo-based website for the DISN Wildlife Research Project.
 │   └── news/                # News pages (one .md per news item)
 │       ├── _index.md        # News list page
 │       └── ...
-├── data/                    # (empty - content is in markdown files)
 ├── layouts/                 # HTML templates
 │   ├── _default/            # Default layouts
 │   ├── partials/            # Reusable components
@@ -38,7 +37,7 @@ A modern, responsive Hugo-based website for the DISN Wildlife Research Project.
 
 ### Prerequisites
 
-- [Hugo](https://gohugo.io/installation/) (v0.120.0 or later recommended)
+- [Hugo](https://gohugo.io/installation/) (v0.152.0 or later recommended)
 
 ### Installation
 

@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta name="generator" content="Hugo 0.120.4">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1">
+        <title> Discovering, Analyzing, and Disrupting Wildlife Trafficking Networks</title>
+        <meta property="og:title" content="DISN Wildlife Research Project">
+        <meta property="og:type" content="website">
+        <meta property="og:image" content="">
+        <meta property="og:url" content="https://vida-nyu.github.io/DISN-Wildlife-website/">
+        <meta property="og:description" content="Advancing the fight against wildlife trafficking through innovative data science and machine learning approaches">
+        <meta name="Description" property="description"
+content="Advancing the fight against wildlife trafficking through
+innovative AI and data science">
+        <link rel="stylesheet" href="https://vida-nyu.github.io/DISN-Wildlife-website/css/style.min.css">
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+        <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+        <link rel="manifest" href="/site.webmanifest">
+        <link href="https://vida-nyu.github.io/DISN-Wildlife-website/index.xml" type="application/atom+xml" rel="alternate" title="Sitewide Atom feed">
+        <meta name="theme-color" content="#ffffff">
+        <script>
+            function updateMode(){
+                localStorage.theme==="dark"||!("theme"in localStorage)&&window.matchMedia("(prefers-color-scheme: dark)").matches?document.documentElement.classList.add("dark"):document.documentElement.classList.remove("dark")
+            }
+            function toggleMode(){
+                localStorage.theme==="dark"?localStorage.theme="light":localStorage.theme="dark",updateMode()
+            }
+            window.onload=updateMode();
+            function toggleMenu(){
+                let e=document.getElementById("navbar-default");
+                e.classList.contains("hidden")?e.classList.remove("hidden"):e.classList.add("hidden")
+            }
+        </script>
+
+    </head>
+    <body>
+        <main class="content h-card container mt-2 m-auto leading-loose md:px-0 px-2 z-0" role="main" style="max-width: 70%;">
+            <!-- <div class="top-header">
+                <div class="logo-title-section">
+                    <img src="images/nyu-vida.png" alt="New York University" class="nyu-logo">
+                     <h1 class="project-title">DISN WILDLIFE RESEARCH PROJECT</h1> -->
+                <!-- </div> -->
+                <!-- <div class="institution-info">
+                    <div>New York University</div>
+                    <div>VIDA Center</div>
+                </div> -->
+            <!-- </div> -->
+
+            <header class="md:px-0 px-2">
+                <nav>
+                    <div class="container flex flex-wrap justify-between items-center mx-auto" style="max-width: 100%;">
+                        <!-- <img src="images/nyu-logo.webp" alt="New York University" class="nyu-logo"> -->
+                        <img src="images/vida-2_Center.png" alt="VIDA Center" class="vida-logo">
+                        <div class="nav-main my-2.5">
+                            <a href="./" class="nav-title py-2.5 text-2xl text-zinc-600 dark:text-zinc-300 hover:border-b-0"></a>
+                        </div>
+                        <button type="button" onclick="toggleMenu()" class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" fill="currentcolor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4A1 1 0 013 5zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm0 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"/>
+                            </svg>
+                        </button>
+                        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                            <ul class="grid md:grid-flow-col items-center justify-between text-lg my-2.5 grid-cols-1 pl-0 text-center">
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/">Home</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/team/">Team</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/publications/">Publications</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://vida-nyu.github.io/DISN-Wildlife-website/news/">News</a>
+                                </li>
+                                <li class="p-2.5 md:first:pl-0 md:border-none border-b dark:border-zinc-500 list-none">
+                                    <a class="text-zinc-600 dark:text-zinc-300 hover:border-b-0" href="https://github.com/VIDA-NYU/wildlife_pipeline">Resources</a>
+                                </li>
+                                <li class="h-7 pl-2.5 pr-0 list-none">
+                                    <button type="button" onclick="toggleMode()" class="h-full" aria-label="Toggle between dark and light mode">
+                                        <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 hidden dark:inline" id="ligh-mode-button-img" alt="A sun icon for switching to light mode" src="https://vida-nyu.github.io/DISN-Wildlife-website/img/light_mode.svg">
+                                        <img class="h-7 w-7 max-h-full mb-1.5 p-1.5 inline dark:hidden" id="dark-mode-button-img" alt="A moon icon for switching to dark mode" src="https://vida-nyu.github.io/DISN-Wildlife-website/img/dark_mode.svg">
+                                    </button>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-title">Advancing Wildlife Conservation</h2>
+                    <p class="hero-subtitle">Through innovative data science and machine learning approaches to combat wildlife trafficking</p>
+                </div>
+            </div>
+
+            <div class="project-overview">
+                <div>
+                    <h2 style="margin-top: 0;">Discovering, Analyzing,
+                and Disrupting Wildlife Trafficking Networks: Project Overview</h2>
+                    <p class="overview-text">
+                        Wildlife trafficking is a global crisis affecting biodiversity, ecological systems, and public health.
+                        This illicit trade generates $7-23 billion annually and encompasses fashion, exotic pets, traditional medicine,
+                        and accessories. During the COVID-19 pandemic, traffickers shifted from face-to-face to online interactions,
+                        creating new challenges but also opportunities for digital detection.
+                    </p>
+                    <p class="overview-text">
+                        Our NSF-funded interdisciplinary project combines computer science, criminology, and environmental science to develop
+                        innovative tools for discovering, analyzing, and disrupting wildlife trafficking networks operating online.
+                    </p>
+                </div>
+		
+                <div>
+                    <img src="images/images_init/macaw.png" alt="Wildlife trafficking overview" class="overview-image" style="width: 70%; height: auto;">
+                </div>
+            <!-- </div> -->
+
+            <!-- <div class="project-overview"> -->
+                <img src="images/images_init/animal_traficking1.jpeg" alt="Animal trafficking impact" class="impact-image" style="width: 75%; height: auto;">
+                <div>
+                <h2 style="margin-top: 0;">Our Impact</h2>
+                <p class="overview-text">
+                    Our research directly addresses the critical need for effective wildlife trafficking detection and prevention.
+                    By developing cost-effective, scalable solutions, we empower researchers and law enforcement agencies worldwide
+                    to combat this global crisis more effectively.
+                </p>
+            </div>
+            </div>
+
+            <div class="challenge-solution-container" style="display: flex; gap: 20px; margin: 20px 0; height: 75%;">
+            <div class="challenge-section" style="height: 75%;">
+                <h3 class="challenge-title">The Challenge</h3>
+                <p class="overview-text">
+                    Online marketplaces publish millions of ads, but identifying wildlife-related products is like finding a needle in a haystack.
+                    For example, searching for "shark" on eBay returns toys, shirts, vacuum cleaners, and only a few actual shark products.
+                    Even specific queries like "shark jaw" return
+            irrelevant fossil items. This makes data collection, triage, and analysis extremely challenging
+                    for researchers studying wildlife trafficking patterns. What if you could achieve 95% accuracy in wildlife trafficking detection in online
+                    marketplaces while slashing labeling costs?
+                </p>
+            </div>
+
+ 
+            </div>
+
+
+            <div class="project-overview">
+                <div>
+                    <img src="images/hilts-pipeline.png" alt="Learn to Sample approach diagram" class="overview-image" style="width: 100%; height: auto;">
+                </div>
+                <div>
+                    <h2>Our Approach</h2>
+                    <p class="overview-text">
+                        We have developed an <a
+                href="https://github.com/VIDA-NYU/wildlife_pipeline">
+                end-to-end pipeline </a> to
+                streamline the collection, extraction and triage of
+                online ads. Our <strong>Learn to Sample (LTS) </strong> methodology addresses the fundamental challenge of identifying relevant wildlife
+                        advertisements in massive online datasets. LTS
+                leverages LLMs to label a small, 
+                systematically selected set of ads, and uses the
+                labeled ads to automatically create smaller, specialized classifiers that can be
+                deployed at scale to perform triage over large ad collections. 
+                    </p>
+                    <p class="overview-text">
+                        This approach enables researchers to create specialized models for different research questions
+                        at a fraction of the cost of traditional methods, making large-scale wildlife trafficking analysis accessible to
+                        researchers and law enforcement agencies
+                worldwide. LTS is open source and can be accessed at:
+                <a href="https://github.com/VIDA-NYU/LTS">
+                https://github.com/VIDA-NYU/LTS </a>.
+                    </p>
+                </div>
+            </div>
+            <div class="stats-grid">
+    </div>
+
+            <h1 id="ack NSF"></h1>
+            <div style="text-align: center; margin-top: 3rem;">
+                <img src=images/NSF_Official_logo.svg width=100 alt="nsf logo">
+                <p style="margin-top: 1rem;">This project is funded by the <a href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2146306&HistoricalAwards=false">NSF</a></p>
+            </div>
+        </main>
+        <footer class="contributors-section">
+            <div class="container">
+                <!-- <h3>Contributing Institutions</h3> -->
+                <div class="university-logos">
+                    <img src="./images/nyu-logo.webp" alt="New York University" class="university-logo">
+                    <img src="./img/132-1326303_indiana-university-hoosiers-football-team-logo-indiana-university-logo-png.png" alt="Indiana University" class="university-logo">
+                    <img src="./img/miami-logo.png" alt="Miami University" class="university-logo">
+                    <img src="./img/JJCJ_logo.png" alt="CUNY - John Jay College of Criminal Justice" class="university-logo">
+                    <!-- Add more university logos as needed -->
+                </div>
+            </div>
+        </footer>
+
+        <footer style="margin-top: 4rem; padding: 2rem 0; border-top: 1px solid #e5e7eb; text-align: center; color: #6b7280;">
+            <div style="max-width: 70%; margin: 0 auto;">
+                <p>&copy; 2025 DISN Wildlife Research Project. Advancing conservation through data science.</p>
+            </div>
+        </footer>
+    </body>
+</html>
