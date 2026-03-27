@@ -139,17 +139,17 @@
             height: 100%;
             background-color: rgba(0, 0, 0, 0.8);
             backdrop-filter: blur(5px);
+            overflow-y: auto;
+            padding: 2rem 1rem;
         }
 
         .modal-content {
             position: relative;
-            margin: auto;
+            margin: 0 auto;
             display: block;
             width: min(720px, 72vw);
             max-width: 72%;
-            max-height: 72vh;
-            top: 50%;
-            transform: translateY(-50%);
+            max-height: none;
             border-radius: 12px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
         }
@@ -191,7 +191,7 @@
             padding: 1.5rem;
             border-radius: 12px;
             margin-top: 1rem;
-            max-width: 90%;
+            max-width: min(720px, 72vw);
             margin-left: auto;
             margin-right: auto;
         }
@@ -267,7 +267,6 @@
             .modal-content {
                 width: min(540px, 88vw);
                 max-width: 88%;
-                max-height: 68vh;
             }
 
             .modal-image {
@@ -287,7 +286,6 @@
             .modal-content {
                 width: min(420px, 92vw);
                 max-width: 92%;
-                max-height: 60vh;
             }
 
             .modal-image {
