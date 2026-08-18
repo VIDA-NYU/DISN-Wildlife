@@ -91,19 +91,9 @@
             background: linear-gradient(135deg, #14532d 0%, #166534 100%);
         }
 
-        .news-image-placeholder.presentation {
-            background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);
-        }
-
         .news-card:hover .news-image,
         .news-card:hover .news-image-placeholder {
             transform: scale(1.05);
-        }
-
-        .modal-presentation-placeholder {
-            height: min(405px, 48vh);
-            border-radius: 12px;
-            font-size: 2.25rem;
         }
 
         .news-content {
@@ -365,7 +355,7 @@
 
             <!-- News Card 9 -->
             <div class="news-card" onclick="openModal('modal9')">
-                <div class="news-image-placeholder presentation" role="img" aria-label="Presentation">UNGA 80</div>
+                <img src="../images/unga-80-first-slide.png" alt="First slide of the UNGA 80 presentation" class="news-image">
                 <div class="news-content">
                     <div class="news-date">September 25, 2025</div>
                     <div class="news-title">UNGA 80 Side Event</div>
@@ -375,7 +365,7 @@
 
             <!-- News Card 10 -->
             <div class="news-card" onclick="openModal('modal10')">
-                <div class="news-image-placeholder presentation" role="img" aria-label="Presentation">ESC 2025</div>
+                <img src="../images/esc-2025-lang-first-slide.png" alt="First slide of Joshua A. Lang's ESC 2025 presentation" class="news-image">
                 <div class="news-content">
                     <div class="news-date">September 2025</div>
                     <div class="news-title">ESC 2025</div>
@@ -385,7 +375,7 @@
 
             <!-- News Card 11 -->
             <div class="news-card" onclick="openModal('modal11')">
-                <div class="news-image-placeholder presentation" role="img" aria-label="Presentation">ESC 2025</div>
+                <img src="../images/esc-2025-gondhali-first-slide.png" alt="First slide of Ulhas Gondhali's ESC 2025 presentation" class="news-image">
                 <div class="news-content">
                     <div class="news-date">September 2025</div>
                     <div class="news-title">ESC 2025</div>
@@ -484,7 +474,7 @@
     <div id="modal9" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal9')">&times;</span>
-            <div class="news-image-placeholder presentation modal-presentation-placeholder" role="img" aria-label="UNGA 80 presentation">UNGA 80</div>
+            <img src="../images/unga-80-first-slide.png" alt="First slide of the UNGA 80 presentation" class="modal-image">
         </div>
         <div class="modal-details">
             <h2 class="modal-title">The Digital Transformation of Wildlife Trafficking: A New Frontier in TOC</h2>
@@ -499,7 +489,7 @@
     <div id="modal10" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal10')">&times;</span>
-            <div class="news-image-placeholder presentation modal-presentation-placeholder" role="img" aria-label="ESC 2025 presentation">ESC 2025</div>
+            <img src="../images/esc-2025-lang-first-slide.png" alt="First slide of Joshua A. Lang's ESC 2025 presentation" class="modal-image">
         </div>
         <div class="modal-details">
             <h2 class="modal-title">Scaling the Web: Unraveling Online Reptile Leather Trade Networks with Machine Learning and Network Analysis</h2>
@@ -514,7 +504,7 @@
     <div id="modal11" class="modal">
         <div class="modal-content">
             <span class="close" onclick="closeModal('modal11')">&times;</span>
-            <div class="news-image-placeholder presentation modal-presentation-placeholder" role="img" aria-label="ESC 2025 presentation">ESC 2025</div>
+            <img src="../images/esc-2025-gondhali-first-slide.png" alt="First slide of Ulhas Gondhali's ESC 2025 presentation" class="modal-image">
         </div>
         <div class="modal-details">
             <h2 class="modal-title">Using Latent Class Analysis to Develop Typologies of Online Sellers of Potentially Illicit Animal Leather Products</h2>
