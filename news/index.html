@@ -91,8 +91,19 @@
             background: linear-gradient(135deg, #14532d 0%, #166534 100%);
         }
 
-        .news-card:hover .news-image {
+        .news-image-placeholder.presentation {
+            background: linear-gradient(135deg, #7c2d12 0%, #c2410c 100%);
+        }
+
+        .news-card:hover .news-image,
+        .news-card:hover .news-image-placeholder {
             transform: scale(1.05);
+        }
+
+        .modal-presentation-placeholder {
+            height: min(405px, 48vh);
+            border-radius: 12px;
+            font-size: 2.25rem;
         }
 
         .news-content {
@@ -352,6 +363,36 @@
                 </div>
             </div>
 
+            <!-- News Card 9 -->
+            <div class="news-card" onclick="openModal('modal9')">
+                <div class="news-image-placeholder presentation" role="img" aria-label="Presentation">UNGA 80</div>
+                <div class="news-content">
+                    <div class="news-date">September 25, 2025</div>
+                    <div class="news-title">UNGA 80 Side Event</div>
+                    <div class="news-excerpt">Gohar A. Petrossian presented at the UNGA 80 Side Event.</div>
+                </div>
+            </div>
+
+            <!-- News Card 10 -->
+            <div class="news-card" onclick="openModal('modal10')">
+                <div class="news-image-placeholder presentation" role="img" aria-label="Presentation">ESC 2025</div>
+                <div class="news-content">
+                    <div class="news-date">September 2025</div>
+                    <div class="news-title">ESC 2025</div>
+                    <div class="news-excerpt">Joshua A. Lang presented at ESC 2025.</div>
+                </div>
+            </div>
+
+            <!-- News Card 11 -->
+            <div class="news-card" onclick="openModal('modal11')">
+                <div class="news-image-placeholder presentation" role="img" aria-label="Presentation">ESC 2025</div>
+                <div class="news-content">
+                    <div class="news-date">September 2025</div>
+                    <div class="news-title">ESC 2025</div>
+                    <div class="news-excerpt">Ulhas Gondhali presented at ESC 2025.</div>
+                </div>
+            </div>
+
             <!-- News Card 8 -->
             <div class="news-card" onclick="openModal('modal8')">
                 <img src="../images/mongabay.png" alt="Featured in Mongabay" class="news-image">
@@ -435,6 +476,51 @@
             <p class="modal-description">Forbes featured the project's work in the March 15, 2026 article "How AI Is Tracking Illegal Wildlife Trade Hidden In Online Marketplaces" highlighting how AI methods can uncover wildlife trafficking activity across online platforms.</p>
             <div class="modal-links">
                 <a href="https://www.forbes.com/sites/melissacristinamarquez/2026/03/15/how-ai-is-tracking-illegal-wildlife-trade-hidden-in-online-marketplaces/" target="_blank" rel="noopener noreferrer">Read Article</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 9 -->
+    <div id="modal9" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal9')">&times;</span>
+            <div class="news-image-placeholder presentation modal-presentation-placeholder" role="img" aria-label="UNGA 80 presentation">UNGA 80</div>
+        </div>
+        <div class="modal-details">
+            <h2 class="modal-title">The Digital Transformation of Wildlife Trafficking: A New Frontier in TOC</h2>
+            <p class="modal-description">Gohar A. Petrossian presented an overview of wildlife trafficking's digital transformation and its relationship to transnational organized crime at the UNGA 80 side event "TOC: New Threats, New Responses."</p>
+            <div class="modal-links">
+                <a href="../files/SEPTEMBER%2025%20PRESENTATION.pptx" download>Download Presentation</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 10 -->
+    <div id="modal10" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal10')">&times;</span>
+            <div class="news-image-placeholder presentation modal-presentation-placeholder" role="img" aria-label="ESC 2025 presentation">ESC 2025</div>
+        </div>
+        <div class="modal-details">
+            <h2 class="modal-title">Scaling the Web: Unraveling Online Reptile Leather Trade Networks with Machine Learning and Network Analysis</h2>
+            <p class="modal-description">Joshua A. Lang presented research on the structure, resilience, and disruption of online reptile leather trade networks at ESC 2025.</p>
+            <div class="modal-links">
+                <a href="../files/ESC_2025_Lang.pptx" download>Download Presentation</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal 11 -->
+    <div id="modal11" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('modal11')">&times;</span>
+            <div class="news-image-placeholder presentation modal-presentation-placeholder" role="img" aria-label="ESC 2025 presentation">ESC 2025</div>
+        </div>
+        <div class="modal-details">
+            <h2 class="modal-title">Using Latent Class Analysis to Develop Typologies of Online Sellers of Potentially Illicit Animal Leather Products</h2>
+            <p class="modal-description">Ulhas Gondhali presented research using latent class analysis to develop empirically grounded typologies of online wildlife-product sellers at ESC 2025.</p>
+            <div class="modal-links">
+                <a href="../files/ESC_2025_Gondhali.pptx" download>Download Presentation</a>
             </div>
         </div>
     </div>
